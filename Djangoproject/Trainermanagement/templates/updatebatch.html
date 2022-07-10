@@ -1,0 +1,44 @@
+{% extends 'adminnavbar.html' %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <div align="center">
+        <h1>Assign Betch for Trainer</h1>
+        <table style="width:100px;height=200px">
+            <tr>
+                <td>Trainer_name:</td>
+                <td>
+                    <select name="ddlTname">
+                        <option selected>{{data.tname}}</option>
+                        {% for i in Trainer %}
+                             <option>{{i.tname}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Batch No:</td>
+                <td><input type="number" name="txtbatch" value="{{data.batchno}}"></td>
+            </tr>
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <select name="ddlcourse">
+                        <option selected>{{data.course}}</option>
+                        {% for i in Course %}
+                            <option>{{ i.course_name }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td><input type="datetime-local" name="txtdatetime" value="{{data.date}}"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="btnsub" value="Assign"></td>
+            </tr>
+        </table>
+    </div>
+</form>
+{% endblock %}

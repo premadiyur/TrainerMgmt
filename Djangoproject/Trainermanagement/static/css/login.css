@@ -1,0 +1,14 @@
+#div1{
+   background_color:gray;
+   border:2px groove red;
+   margin-top:4px;
+   color:white;
+   font-size:20px;
+}
+body{
+font-size: 20px;
+background_size:1800px 900px;
+background_repeat:no-repeat;
+background_position:top;
+background_attachment:fixed;
+}
