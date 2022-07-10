@@ -1,0 +1,1413 @@
+-------------------------------------
+drive_fs log started
+version: 58.0.3.0
+changelist 449028846 with baseline 445524140 in a mint client based on //depot/branches/drive_fs_release_branch/445524140.1/google3
+-------------------------------------
+2022-06-01T09:04:03.207ZI [3436:log_writer_thread] instrumentation.cc:113:OpenLogFileInDirectory Logging to C:\Users\admin\AppData\Local\Google\DriveFS\Logs\drive_fs.txt
+2022-06-01T09:04:03.208ZI [1008:NonCelloThread] drive_fs_main.cc:153:LogExistingCrashReports No existing crash reports found.
+2022-06-01T09:04:03.208ZI [1008:NonCelloThread] drive_fs_main.cc:392:PrintCommandLine C:\Program Files\Google\Drive File Stream\58.0.3.0\GoogleDriveFS.exe --crash_handler_token=\\.\pipe\crashpad_6496_UMLYZFMZFKYXGZEY --parent_version=58.0.3.0 --startup_mode 
+2022-06-01T09:04:04.737ZI [1008:NonCelloThread] drive_fs_main.cc:136:InitializeLanguage Initializing with detected language: en-GB
+2022-06-01T09:04:04.737ZI [1008:NonCelloThread] i18n.cc:311:InitializeI18n I18n initialized with en-gb
+2022-06-01T09:04:44.384ZI [1008:NonCelloThread] drive_fs.cc:518:RunDriveFS Options: argv_0: "C:\\Program Files\\Google\\Drive File Stream\\58.0.3.0\\GoogleDriveFS.exe"
+base_path: "C:\\Users\\admin\\AppData\\Local\\Google\\DriveFS"
+ipc_pipe_path: "\\\\.\\Pipe\\GoogleDriveFSPipe_admin"
+shell_ipc_pipe_path: "\\\\.\\Pipe\\GoogleDriveFSPipe_admin_shell"
+crash_handler_token: "\\\\.\\pipe\\crashpad_6496_UMLYZFMZFKYXGZEY"
+enable_tracing: false
+enable_ui: true
+enable_file_dances: true
+use_fake_cello_fs: false
+enable_poll_for_changes: true
+drive_create_options {
+  use_fake_cloud_store: false
+  authorize_new_user: false
+  refresh_token: ""
+  user_email: ""
+  token_uri: ""
+  auth_uri: ""
+  metadata_server_auth_uri: ""
+  user_id: ""
+}
+enable_field_event_recording: true
+open_gdoc_path: ""
+started_by_installer: false
+locale: ""
+force_onboarding: false
+log_connection_details: false
+use_intranet_connectivity_to_check_online: false
+crash_handler_init_status: SUCCESS
+cello_options {
+  drive_api_options {
+    apiary_trace_token: ""
+    apiary_trace_regex: ""
+    dapper_trace_regex: ""
+    functional_tests_dir_path: ""
+  }
+}
+open_gdocs_root: false
+open_gsheets_root: false
+open_gslides_root: false
+crash_on_core_start: false
+use_curl_logging_scribe: false
+force_case_sensitivity: false
+new_gsuite_file: ""
+account_settings_from_file_path: ""
+parent_version: "58.0.3.0"
+open_all_dialogs: false
+startup_mode: true
+fake_multiaccount_ui: false
+feature_config_override {
+  global {
+  }
+  account {
+  }
+}
+fake_migration_file_viewer_data: false
+global_feature_config {
+}
+photos_scope: ""
+show_sign_in_dialog_if_no_user: true
+show_preferences_dialog_debug_menu: false
+crash_in_execution_context: false
+enable_physical_http_logging: false
+
+2022-06-01T09:04:44.384ZI [1008:NonCelloThread] drive_fs.cc:156:LogSystemConfig OS: Windows/10.0.19044
+2022-06-01T09:04:44.384ZI [1008:NonCelloThread] drive_fs.cc:163:LogSystemConfig Architecture: x86_64
+2022-06-01T09:04:44.384ZI [1008:NonCelloThread] drive_fs.cc:171:LogSystemConfig Total RAM: 3.84 GiB
+2022-06-01T09:04:44.385ZI [1008:NonCelloThread] drive_fs.cc:187:LogSystemConfig Disk space: 51.57 GB free / 106.79 GB total
+2022-06-01T09:04:44.390ZI [1008:NonCelloThread] drive_fs.cc:194:LogSystemConfig Timezone: UTC+0000 (UTC)
+2022-06-01T09:04:44.397ZI [1008:NonCelloThread] preferences_manager.cc:109:GetUserPreferences user_preferences for no_user: {
+global {
+  content_cache_base_path: "C:\\Users\\admin\\AppData\\Local\\Google\\DriveFS"
+  disable_ssl_validation: false
+  disable_crl_check: false
+  direct_connection: false
+  do_not_show_dialogs {
+    mount_point_changed: false
+    confirm_shared_folder_move_in: false
+    confirm_shared_folder_move_out: false
+    confirm_td_file_move_out: false
+    confirm_move_to_untrusted_td: false
+    warning_move_to_untrusted_td: false
+    warning_td_file_move_out: false
+    warning_shared_folder_move_in: false
+    warning_shared_folder_move_out: false
+  }
+  autostart_on_login: true
+  outlook_attachment_size_threshold_mbytes: 10
+  disable_outlook_plugin: false
+  disable_meet_outlook_plugin: false
+  disable_add_account: false
+  allowed_accounts_pattern: ".*"
+  stalled_progress_seconds: 5
+  open_office_files_in_docs: true
+  enable_smb: false
+  prompt_to_backup_devices: true
+  trust_system_root_certs: false
+  disable_gpu: false
+  search_hot_key: 1
+  do_not_show_notifications {
+    entry {
+      notification_type: SPORK_TOUR_NOTIFICATION
+    }
+  }
+}
+account {
+  mount_point_path: "G"
+  disable_realtime_presence: false
+  machine_root_doc_id: ""
+  photos_upload_quality: ORIGINAL_QUALITY
+  photos_upload_screenshots: true
+  photos_upload_raw_files: true
+  old_mirrored_my_drive_path: ""
+  mirrored_my_drive_watch_path: ""
+  hide_mount_point: false
+  show_mount_point_in_sidebar: true
+  mac_smb_port: 0
+}
+}
+2022-06-01T09:04:44.397ZI [1008:NonCelloThread] preferences_manager.cc:312:GetEffectivePreferences effective_preferences for no_user: {
+global {
+  content_cache_base_path: "C:\\Users\\admin\\AppData\\Local\\Google\\DriveFS"
+  disable_ssl_validation: false
+  disable_crl_check: false
+  direct_connection: false
+  do_not_show_dialogs {
+    mount_point_changed: false
+    confirm_shared_folder_move_in: false
+    confirm_shared_folder_move_out: false
+    confirm_td_file_move_out: false
+    confirm_move_to_untrusted_td: false
+    warning_move_to_untrusted_td: false
+    warning_td_file_move_out: false
+    warning_shared_folder_move_in: false
+    warning_shared_folder_move_out: false
+  }
+  autostart_on_login: true
+  outlook_attachment_size_threshold_mbytes: 10
+  disable_outlook_plugin: false
+  disable_meet_outlook_plugin: false
+  disable_add_account: false
+  allowed_accounts_pattern: ".*"
+  stalled_progress_seconds: 5
+  open_office_files_in_docs: true
+  enable_smb: false
+  prompt_to_backup_devices: true
+  trust_system_root_certs: false
+  disable_gpu: false
+  search_hot_key: 1
+  do_not_show_notifications {
+    entry {
+      notification_type: SPORK_TOUR_NOTIFICATION
+    }
+  }
+}
+account {
+  mount_point_path: "G"
+  disable_realtime_presence: false
+  machine_root_doc_id: ""
+  photos_upload_quality: ORIGINAL_QUALITY
+  photos_upload_screenshots: true
+  photos_upload_raw_files: true
+  old_mirrored_my_drive_path: ""
+  mirrored_my_drive_watch_path: ""
+  hide_mount_point: false
+  show_mount_point_in_sidebar: true
+  mac_smb_port: 0
+}
+}
+2022-06-01T09:04:44.401ZI [12724:ipc_thread] ipc_socket_win.cc:274:GetNextConnection Accepting next connection
+2022-06-01T09:04:44.892ZI [1008:NonCelloThread] app.cc:616:RegisterOutlookAddInHelper Google Drive Outlook Add-in: Outlook add-in already unregistered.
+2022-06-01T09:04:44.892ZI [1008:NonCelloThread] app.cc:616:RegisterOutlookAddInHelper Google Meet Outlook Add-in: Outlook add-in already unregistered.
+2022-06-01T09:04:50.971ZI [1008:NonCelloThread] dialog.cc:78:ResetViewViaDifferencer Resetting UpdateViewDifferencer.
+2022-06-01T09:05:00.086ZI [1220:VolumeListenerThread] volume_listener_win.cc:390:GetVolumeFromGuidPath \\?\Volume{31f26811-0000-0000-0000-100000000000}\ description. name: , uuid: 31f26811-0000-0000-0000-100000000000, device_number: 341833814, mount_point: C:\, fs_type: NTFS, device_type: Internal
+2022-06-01T09:05:00.090ZI [7532:MediaManagerThread] media_manager.cc:899:AddMediaInternal Media was added [Media: media_id="31f26811-0000-0000-0000-100000000000" name="" file_system="NTFS" mount_point(raw)="C:\" device_type="Internal" device_number=341833814 writable="true"]
+2022-06-01T09:05:00.094ZI [1220:VolumeListenerThread] volume_listener_win.cc:390:GetVolumeFromGuidPath \\?\Volume{31f26811-0000-0000-0000-30dd18000000}\ description. name: , uuid: 31f26811-0000-0000-0000-30dd18000000, device_number: 3799597412, mount_point: , fs_type: NTFS, device_type: Internal
+2022-06-01T09:05:00.094ZE [1220:VolumeListenerThread] volume_listener_win.cc:397:GetVolumeFromGuidPath \\?\Volume{31f26811-0000-0000-0000-30dd18000000}\ has no mount point.
+2022-06-01T09:05:00.094ZI [1220:VolumeListenerThread] volume_listener_win.cc:390:GetVolumeFromGuidPath \\?\Volume{31f26811-0000-0000-0000-600019000000}\ description. name: windows , uuid: 31f26811-0000-0000-0000-600019000000, device_number: 140772312, mount_point: E:\, fs_type: NTFS, device_type: Internal
+2022-06-01T09:05:00.103ZI [7532:MediaManagerThread] media_manager.cc:899:AddMediaInternal Media was added [Media: media_id="31f26811-0000-0000-0000-600019000000" name="windows " file_system="NTFS" mount_point(raw)="E:\" device_type="Internal" device_number=140772312 writable="true"]
+2022-06-01T09:05:00.248ZE [1008:NonCelloThread] ipc_server_manager.cc:96:StartShellIpcServer Attempted to start ShellIpcServer before initiializing SwitchbladeResponseProvider.
+2022-06-01T09:05:00.249ZE [1008:NonCelloThread] client.cc:353:Initialize Failed to start Ipc Server : Status::PRECONDITION_FAILED
+2022-06-01T09:05:00.249ZI [1008:NonCelloThread] curl_api.cc:1314:Create SSL verification with built in certificates
+2022-06-01T09:05:00.400ZI [1008:NonCelloThread] client.cc:527:LogWindowsFilterDrivers Nonstandard filter drivers present: bindflt.sys (556d9232df19b942)
+2022-06-01T09:05:00.400ZI [1008:NonCelloThread] client.cc:532:LogWindowsFilterDrivers Nonstandard filter driver combo hash: 556d9232df19b942
+2022-06-01T09:05:00.825ZI [1008:NonCelloThread] uiext.cc:70:SaveFlagsToRegistry Set Explorer extension keys.
+2022-06-01T09:05:01.101ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-01T09:05:01.122ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-01T09:05:01.122ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state OFFLINE
+2022-06-01T09:05:02.647ZI [4064:proxy_resolver_thread] proxy.cc:173:GetProxyForUrlInternal Proxy type resolved to 0
+2022-06-01T09:05:02.653ZE [13108:CurlWorker0] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-01T09:05:03.044ZI [1008:NonCelloThread] uiext.cc:70:SaveFlagsToRegistry Set Explorer extension keys.
+2022-06-01T09:05:04.371ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-01T09:05:04.371ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-01T09:05:04.589ZI [1008:NonCelloThread] uiext.cc:70:SaveFlagsToRegistry Set Explorer extension keys.
+2022-06-01T09:05:07.264ZI [1008:NonCelloThread] drive_fs.cc:369:operator() Startup tracing disabled
+2022-06-01T09:05:07.331ZI [8028:trace_writer_thread] instrumentation.cc:587:operator() Writing Chrome Trace to C:\Users\admin\AppData\Local\Google\DriveFS\Logs\startup_trace_2022-06-01T09_05_07.json
+2022-06-01T09:05:07.337ZI [8028:trace_writer_thread] instrumentation.cc:589:operator() Trace successfully written
+2022-06-01T09:05:54.884ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-01T09:05:55.735ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-01T09:05:55.834ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-01T09:05:55.867ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-01T09:05:56.509ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-01T09:05:56.638ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-01T09:05:56.681ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-01T09:05:56.695ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state ONLINE
+2022-06-01T09:08:20.134ZI [1220:VolumeListenerThread] volume_listener_win.cc:276:VolumeAdded Volume added: D:\
+2022-06-01T09:08:25.446ZI [1220:VolumeListenerThread] volume_listener_win.cc:390:GetVolumeFromGuidPath \\?\Volume{e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a}\ description. name: palle , uuid: e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a, device_number: 3800793887, mount_point: D:\, fs_type: NTFS, device_type: Removable
+2022-06-01T09:08:25.748ZI [7532:MediaManagerThread] media_manager.cc:899:AddMediaInternal Media was added [Media: media_id="e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a" name="palle " file_system="NTFS" mount_point(raw)="D:\" device_type="Removable" device_number=3800793887 writable="true"]
+2022-06-01T09:08:26.506ZI [1008:NonCelloThread] uiext.cc:70:SaveFlagsToRegistry Set Explorer extension keys.
+2022-06-01T09:08:33.588ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:91:ParseIdFromDbccName We expect four pieces of a dbcc_name. Parsed 7 pieces in \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:08:33.588ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:166:AddDevice Failed to parse \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:09:21.890ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:91:ParseIdFromDbccName We expect four pieces of a dbcc_name. Parsed 7 pieces in \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:09:21.890ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:190:RemoveDevice Failed to parse \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:09:22.938ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:91:ParseIdFromDbccName We expect four pieces of a dbcc_name. Parsed 7 pieces in \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:09:22.938ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:166:AddDevice Failed to parse \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:09:29.970ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:91:ParseIdFromDbccName We expect four pieces of a dbcc_name. Parsed 7 pieces in \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:09:29.970ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:190:RemoveDevice Failed to parse \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:09:34.843ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:91:ParseIdFromDbccName We expect four pieces of a dbcc_name. Parsed 7 pieces in \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:09:34.843ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:166:AddDevice Failed to parse \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:09:37.750ZI [1220:VolumeListenerThread] volume_listener_win.cc:293:VolumeRemoved Volume removed: D:\
+2022-06-01T09:09:37.754ZI [1220:VolumeListenerThread] media_manager.cc:1041:RemoveMedia Removing media with id: e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a
+2022-06-01T09:09:39.093ZI [1008:NonCelloThread] uiext.cc:70:SaveFlagsToRegistry Set Explorer extension keys.
+2022-06-01T09:09:41.899ZI [1220:VolumeListenerThread] volume_listener_win.cc:276:VolumeAdded Volume added: D:\
+2022-06-01T09:09:41.905ZI [1220:VolumeListenerThread] volume_listener_win.cc:390:GetVolumeFromGuidPath \\?\Volume{e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a}\ description. name: palle , uuid: e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a, device_number: 3800793887, mount_point: D:\, fs_type: NTFS, device_type: Removable
+2022-06-01T09:09:41.908ZI [7532:MediaManagerThread] media_manager.cc:899:AddMediaInternal Media was added [Media: media_id="e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a" name="palle " file_system="NTFS" mount_point(raw)="D:\" device_type="Removable" device_number=3800793887 writable="true"]
+2022-06-01T09:09:41.912ZI [1008:NonCelloThread] uiext.cc:70:SaveFlagsToRegistry Set Explorer extension keys.
+2022-06-01T09:10:15.525ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:91:ParseIdFromDbccName We expect four pieces of a dbcc_name. Parsed 7 pieces in \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:10:15.525ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:190:RemoveDevice Failed to parse \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:10:16.077ZI [1220:VolumeListenerThread] volume_listener_win.cc:293:VolumeRemoved Volume removed: D:\
+2022-06-01T09:10:16.077ZI [1220:VolumeListenerThread] media_manager.cc:1041:RemoveMedia Removing media with id: e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a
+2022-06-01T09:10:17.433ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:91:ParseIdFromDbccName We expect four pieces of a dbcc_name. Parsed 7 pieces in \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:10:17.433ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:166:AddDevice Failed to parse \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:10:18.565ZI [1008:NonCelloThread] uiext.cc:70:SaveFlagsToRegistry Set Explorer extension keys.
+2022-06-01T09:10:21.136ZI [1220:VolumeListenerThread] volume_listener_win.cc:276:VolumeAdded Volume added: D:\
+2022-06-01T09:10:21.161ZI [1220:VolumeListenerThread] volume_listener_win.cc:390:GetVolumeFromGuidPath \\?\Volume{e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a}\ description. name: palle , uuid: e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a, device_number: 3800793887, mount_point: D:\, fs_type: NTFS, device_type: Removable
+2022-06-01T09:10:21.185ZI [7532:MediaManagerThread] media_manager.cc:899:AddMediaInternal Media was added [Media: media_id="e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a" name="palle " file_system="NTFS" mount_point(raw)="D:\" device_type="Removable" device_number=3800793887 writable="true"]
+2022-06-01T09:10:21.187ZI [1008:NonCelloThread] uiext.cc:70:SaveFlagsToRegistry Set Explorer extension keys.
+2022-06-01T09:10:42.458ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:91:ParseIdFromDbccName We expect four pieces of a dbcc_name. Parsed 7 pieces in \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:10:42.458ZE [6264:PtpMtpListenerThread_COM] ptpmtp_listener_win.cc:190:RemoveDevice Failed to parse \\?\SWD#WPDBUSENUM#_??_USBSTOR#Disk&Ven_hp&Prod_x740w&Rev_PMAP#6E008AB16E7B2759&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}#{6ac27878-a6fa-4155-ba85-f98f491d4f33}
+2022-06-01T09:10:45.377ZI [1220:VolumeListenerThread] volume_listener_win.cc:293:VolumeRemoved Volume removed: D:\
+2022-06-01T09:10:45.378ZI [1220:VolumeListenerThread] media_manager.cc:1041:RemoveMedia Removing media with id: e14a6dfe-dd21-11ec-b86a-e8d0fcd1e83a
+2022-06-01T09:10:47.018ZI [1008:NonCelloThread] uiext.cc:70:SaveFlagsToRegistry Set Explorer extension keys.
+2022-06-01T11:48:33.610ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-01T11:48:33.889ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-01T11:48:33.889ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state OFFLINE
+2022-06-01T11:48:38.092ZE [9888:CurlWorker1] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-01T11:48:38.093ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-01T11:48:38.093ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-01T14:48:52.059ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-01T14:48:52.323ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-01T14:48:52.402ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-01T14:48:52.529ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-01T14:48:54.867ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-01T14:48:54.927ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-01T14:48:55.047ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-01T14:48:55.162ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-01T14:48:56.393ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-01T14:48:56.462ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-01T14:48:56.471ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-01T14:48:56.479ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state ONLINE
+2022-06-02T03:30:42.524ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:30:42.524ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:30:42.524ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:30:45.297ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T03:30:46.301ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T03:30:46.341ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state OFFLINE
+2022-06-02T03:32:13.555ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:32:13.555ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:32:13.555ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:33:43.869ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:33:43.870ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:33:43.870ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:35:14.946ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:35:14.946ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:35:14.946ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:36:45.374ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:36:45.375ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:36:45.375ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:38:15.426ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:38:15.426ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:38:15.426ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:39:45.503ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:39:45.503ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:39:45.503ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:41:15.703ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:41:15.703ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:41:15.703ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:42:45.750ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:42:45.750ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:42:45.750ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:44:16.494ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:44:16.495ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:44:16.495ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:45:46.551ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:45:46.552ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:45:46.552ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:47:16.575ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:47:16.575ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:47:16.575ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:48:46.678ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:48:46.679ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:48:46.679ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:50:16.781ZE [7692:CurlWorker2] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:50:16.782ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:50:16.782ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T03:50:54.422ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T03:50:54.620ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T03:50:54.622ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T03:50:54.788ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T03:50:58.327ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T03:50:59.124ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-02T03:50:59.225ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-02T03:50:59.447ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state ONLINE
+2022-06-02T04:20:52.733ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T04:20:53.527ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T04:20:54.017ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state OFFLINE
+2022-06-02T04:20:55.420ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T04:20:56.820ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-02T04:20:56.991ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-02T04:20:57.027ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state ONLINE
+2022-06-02T04:20:57.119ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T04:20:58.178ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-02T04:20:58.284ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-02T04:20:58.398ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value ONLINE, so not notifying.
+2022-06-02T06:29:48.399ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:29:51.907ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:29:52.150ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state OFFLINE
+2022-06-02T06:29:52.766ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:29:54.405ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:29:54.780ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:29:55.788ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:30:01.845ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:30:01.845ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:30:01.845ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:30:02.653ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:30:02.956ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:30:03.308ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:30:52.106ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:30:52.488ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:30:52.916ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:30:53.086ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:31:02.097ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:31:02.332ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:31:02.391ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:31:30.661ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:31:31.264ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:31:31.572ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:31:31.656ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:31:33.563ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:31:33.563ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:31:33.563ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:31:48.093ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:31:48.258ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:31:48.260ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:31:50.369ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:31:51.047ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:31:51.216ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:31:51.301ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:32:03.017ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:32:03.181ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:32:03.221ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:32:05.933ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:32:06.241ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:32:06.285ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:32:06.291ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:32:09.772ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:32:09.902ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:32:09.971ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:32:17.968ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:32:18.263ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:32:18.349ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:32:18.672ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:32:20.088ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:32:20.259ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:32:20.373ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:32:38.026ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:32:38.336ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:32:38.559ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:32:38.843ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:32:54.954ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:32:54.977ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:32:55.090ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:33:04.037ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:33:04.037ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:33:04.037ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:33:22.046ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:33:22.146ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:33:22.166ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:33:22.172ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:33:24.674ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:33:24.713ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:33:24.892ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:33:30.367ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:33:30.486ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:33:30.521ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:33:30.529ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:33:42.871ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:33:42.924ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:33:42.956ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:34:02.274ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:34:02.367ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:34:02.609ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:34:02.617ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:34:13.561ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:34:13.843ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:34:13.967ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:34:31.797ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:34:31.961ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:34:31.981ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:34:32.085ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:34:35.373ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:34:35.374ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:34:35.374ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:34:42.365ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:34:42.719ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:34:43.068ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:34:46.003ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:34:46.404ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:34:46.627ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:34:46.730ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:34:59.018ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:34:59.141ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:34:59.410ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:35:11.417ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:35:11.541ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:35:11.653ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:35:11.657ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:35:21.729ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:35:21.887ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:35:21.907ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:35:40.527ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:35:40.683ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:35:40.858ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:35:40.972ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:35:43.931ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:35:44.020ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:35:44.041ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:35:55.152ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:35:55.310ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:35:55.391ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:35:55.464ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:36:05.438ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:36:05.439ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:36:05.439ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:36:10.243ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:36:10.651ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:36:10.666ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:36:26.904ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:36:27.256ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:36:27.323ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:36:27.351ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:36:37.660ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:36:37.680ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:36:37.682ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:37:23.859ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:37:24.234ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:37:24.251ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:37:24.257ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:37:34.723ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:37:34.726ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:37:34.727ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:37:38.340ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:37:38.340ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:37:38.340ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:37:52.485ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:37:53.750ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:37:54.432ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:37:54.872ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:37:55.090ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:37:55.531ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:37:55.934ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:38:02.487ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:38:02.748ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:38:03.091ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:38:03.148ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:38:16.313ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:38:16.476ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:38:16.480ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:38:19.652ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:38:20.062ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:38:20.276ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:38:20.406ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:39:03.543ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:39:03.703ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:39:03.737ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:39:08.591ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:39:08.591ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:39:08.592ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:39:45.954ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:39:46.220ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:39:46.394ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:39:46.682ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:39:56.161ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:39:56.501ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:39:56.582ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:40:17.671ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:40:18.069ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:40:18.277ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:40:18.462ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:40:29.322ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:40:29.330ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:40:29.361ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:40:33.833ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:40:34.100ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:40:34.149ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:40:34.194ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:40:39.172ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:40:39.173ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:40:39.173ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:40:54.065ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:40:54.142ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:40:54.269ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:40:58.295ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:40:58.385ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:40:58.465ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:40:58.531ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:41:09.094ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:41:09.184ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:41:09.237ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:41:26.649ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:41:26.668ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:41:26.673ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:41:26.690ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:42:09.355ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:42:09.355ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:42:09.355ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:43:39.410ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:43:39.410ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:43:39.410ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:45:11.862ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:45:11.862ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:45:11.862ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:46:41.899ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:46:41.899ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:46:41.900ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:48:11.938ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:48:11.938ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:48:11.938ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:49:41.988ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:49:41.988ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:49:41.988ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:51:14.060ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:51:14.061ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:51:14.062ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:52:44.655ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:52:44.655ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:52:44.655ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:54:16.853ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:54:16.853ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:54:16.854ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:55:46.931ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:55:46.932ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:55:46.932ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:57:16.976ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:57:16.976ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:57:16.976ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:58:47.014ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:58:47.014ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:58:47.015ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T06:59:23.000ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:59:23.070ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:59:23.071ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:59:43.679ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:59:43.864ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T06:59:43.956ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:59:43.969ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T06:59:58.839ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T06:59:58.878ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T06:59:58.886ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:00:08.648ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:00:08.832ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:00:08.841ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:00:08.847ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:00:17.333ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:00:17.334ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:00:17.334ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:00:30.470ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:00:30.586ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:00:30.686ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:00:33.286ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:00:33.339ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:00:33.517ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:00:33.518ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:00:36.104ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:00:36.171ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:00:36.189ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:00:41.111ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:00:41.190ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:00:41.225ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:00:41.239ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:00:44.749ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:00:44.926ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:00:44.937ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:00:48.657ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:00:48.692ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:00:48.899ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:00:48.928ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:01:07.254ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:01:07.340ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:01:07.456ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:01:16.850ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:01:16.934ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:01:16.956ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:01:16.967ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:01:30.681ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:01:30.796ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:01:30.892ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:01:45.367ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:01:45.437ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:01:45.475ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:01:45.574ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:01:47.664ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:01:47.664ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:01:47.664ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:02:04.522ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:02:04.698ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:02:04.770ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:02:07.941ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:02:08.056ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:02:08.084ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:02:08.132ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:02:11.842ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:02:11.907ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:02:11.910ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:02:21.302ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:02:21.384ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:02:21.455ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:02:21.477ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:03:11.554ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:03:11.672ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:03:11.738ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:03:17.703ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:03:17.703ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:03:17.703ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:03:19.588ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:03:19.750ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:03:19.789ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:03:19.807ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:03:45.255ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:03:45.298ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:03:45.360ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:03:52.428ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:03:52.510ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:03:52.528ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:03:52.540ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:04:18.996ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:04:19.033ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:04:19.053ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:04:30.400ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:04:30.474ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:04:30.483ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:04:30.492ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:04:47.917ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:04:47.917ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:04:47.917ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:05:16.885ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:05:17.059ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:05:17.186ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:05:19.662ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:05:19.708ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:05:19.800ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:05:19.806ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:05:37.391ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:05:37.474ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:05:37.516ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:05:39.569ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:05:40.106ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:05:40.644ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:05:40.723ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:05:54.896ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:05:55.047ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:05:55.121ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:05:57.532ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:05:57.651ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:05:57.656ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:05:57.843ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:05:58.154ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:05:58.234ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:06:01.425ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:06:01.473ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:06:01.514ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:06:01.533ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:06:13.796ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:06:13.942ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:06:13.943ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:06:17.181ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:06:17.291ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:06:17.308ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:06:17.350ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:06:19.106ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:06:19.106ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:06:19.106ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:06:31.226ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:06:31.337ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:06:31.346ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:06:34.240ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:06:34.429ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:06:34.747ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:06:34.871ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:06:45.118ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:06:45.170ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:06:45.246ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:06:48.858ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:06:49.430ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:06:49.703ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:06:49.795ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:06:52.071ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:06:52.299ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:06:52.305ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:06:59.215ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:06:59.498ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:06:59.607ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:06:59.762ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:07:09.653ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:07:09.709ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:07:09.818ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:07:12.641ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:07:12.835ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:07:12.928ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:07:12.941ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:07:24.695ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:07:24.844ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:07:24.951ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:07:42.428ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:07:42.659ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:07:42.743ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:07:42.800ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:07:43.703ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:07:44.000ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:07:44.032ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:07:48.697ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:07:48.895ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:07:48.911ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:07:48.931ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:07:50.072ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:07:50.072ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:07:50.072ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:07:59.375ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:07:59.495ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:07:59.499ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:08:02.234ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:08:02.591ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:08:02.643ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:08:02.649ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:08:07.568ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:08:07.629ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:08:07.762ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:08:13.832ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:08:13.861ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:08:13.883ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:08:13.886ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:08:19.446ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:08:19.540ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:08:19.605ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:08:40.080ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:08:40.245ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:08:40.363ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:08:40.431ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:08:50.414ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:08:50.558ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:08:50.662ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:09:05.742ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:09:05.799ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:09:05.821ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:09:05.845ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:09:19.599ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:09:19.746ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:09:19.749ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:09:20.288ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:09:20.288ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:09:20.288ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:09:23.649ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:09:23.675ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:09:23.680ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:09:23.697ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:09:27.652ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:09:27.715ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:09:27.807ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:09:35.133ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:09:35.216ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:09:35.242ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:09:35.259ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:09:45.379ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:09:45.450ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:09:45.453ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:09:48.401ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:09:48.493ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:09:48.600ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:09:48.640ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:09:59.825ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:09:59.905ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:09:59.926ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:10:04.864ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:10:04.956ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:10:04.972ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:10:04.989ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:10:16.546ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:10:16.631ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:10:16.698ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:10:19.638ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:10:19.692ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:10:19.704ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:10:19.753ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:10:31.526ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:10:31.618ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:10:31.630ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:10:50.637ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:10:50.981ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:10:51.074ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:10:51.176ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:10:51.622ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:10:51.622ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:10:51.622ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:12:23.146ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:12:23.146ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:12:23.146ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:18:26.971ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:18:27.175ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:18:27.467ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:18:48.797ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:18:48.957ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:18:49.012ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:18:49.021ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:18:59.456ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:18:59.510ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:18:59.524ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:19:05.121ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:19:05.333ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:19:05.582ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:19:05.736ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:19:22.568ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:19:22.695ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:19:22.754ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:19:26.812ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:19:27.002ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:19:27.156ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:19:27.223ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:19:36.377ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:19:36.378ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:19:36.378ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:19:37.678ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:19:37.801ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:19:38.019ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:19:40.657ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:19:40.873ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:19:41.134ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:19:41.363ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:19:52.076ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:19:52.224ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:19:52.228ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:19:54.936ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:19:55.295ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:19:55.656ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:19:55.670ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:20:06.554ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:20:06.678ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:20:06.686ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:20:09.322ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:20:09.414ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:20:09.431ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:20:09.495ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:20:11.638ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:20:11.903ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:20:11.931ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:20:16.703ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:20:16.784ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:20:17.001ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:20:17.085ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:20:28.452ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:20:28.585ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:20:28.601ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:20:31.675ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:20:32.018ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:20:32.098ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:20:32.225ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:20:35.361ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:20:35.422ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:20:35.452ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:20:58.238ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:20:58.810ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:20:58.967ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:20:59.108ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:21:07.909ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:21:07.909ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:21:07.909ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:21:18.269ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:21:18.496ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:21:18.594ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:21:47.231ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:21:47.398ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:21:47.411ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:21:47.582ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:21:50.930ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:21:51.135ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:21:51.153ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:22:31.393ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:22:31.443ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:22:31.450ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:22:31.457ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:22:32.192ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:22:32.357ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:22:32.611ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:22:36.306ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:22:36.709ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:22:36.851ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:22:37.036ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:22:40.128ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:22:40.128ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:22:40.128ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:22:51.146ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:22:51.265ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:22:51.294ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:22:55.058ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:22:55.451ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:22:55.490ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:22:55.513ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:23:05.507ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:23:05.624ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:23:05.632ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:23:07.878ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:23:08.339ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:23:08.459ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:23:08.559ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:23:21.385ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:23:21.410ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:23:21.516ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:23:24.470ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:23:24.608ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:23:24.612ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:23:24.620ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:23:36.576ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:23:36.600ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:23:36.687ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:23:39.359ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:23:39.542ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:23:39.584ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:23:39.591ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:23:50.619ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:23:50.753ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:23:50.766ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:23:53.494ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:23:53.655ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:23:53.843ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:23:53.929ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:24:04.974ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:24:05.070ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:24:05.084ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:24:07.996ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T07:24:08.194ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-02T07:24:08.223ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T07:24:08.226ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T07:24:10.902ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:24:10.902ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:24:10.902ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:25:40.977ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:25:40.978ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:25:40.978ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:27:11.014ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:27:11.014ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:27:11.015ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:28:43.057ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:28:43.057ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:28:43.058ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:30:15.305ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:30:15.305ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:30:15.305ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:31:47.349ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:31:47.349ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:31:47.349ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:33:19.382ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:33:19.383ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:33:19.383ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:34:51.453ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:34:51.454ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:34:51.454ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:36:24.367ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:36:24.370ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:36:24.370ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:38:04.292ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:38:04.292ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:38:04.292ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:39:36.352ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:39:36.353ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:39:36.353ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:41:08.403ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:41:08.403ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:41:08.403ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:42:40.452ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:42:40.453ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:42:40.453ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:44:12.801ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:44:12.802ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:44:12.802ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:45:44.929ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:45:44.929ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:45:44.929ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:47:17.010ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:47:17.010ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:47:17.010ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:48:49.053ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:48:49.053ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:48:49.053ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:50:21.101ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:50:21.101ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:50:21.101ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:51:51.288ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:51:51.289ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:51:51.289ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:53:23.508ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:53:23.508ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:53:23.509ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:54:55.547ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:54:55.548ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:54:55.548ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:56:27.736ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:56:27.748ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:56:27.748ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:57:59.963ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:57:59.963ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:57:59.963ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:59:32.035ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:59:32.036ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T07:59:32.036ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:01:04.099ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:01:04.100ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:01:04.100ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:02:34.412ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:02:34.412ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:02:34.412ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:04:04.555ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:04:04.555ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:04:04.555ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:05:36.672ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:05:36.673ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:05:36.673ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:07:08.714ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:07:08.714ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:07:08.714ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:08:40.754ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:08:40.755ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:08:40.755ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:10:13.068ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:10:13.068ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:10:13.068ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:11:45.137ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:11:45.138ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:11:45.138ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:13:17.182ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:13:17.183ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:13:17.183ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:14:49.309ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:14:49.310ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:14:49.310ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:16:21.381ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:16:21.381ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:16:21.381ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:17:53.495ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:17:53.496ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:17:53.496ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:19:23.553ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:19:23.553ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:19:23.553ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:20:55.611ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:20:55.611ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:20:55.611ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:22:27.800ZE [12180:CurlWorker4] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:22:27.800ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T08:22:27.800ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T11:23:12.174ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-02T11:23:12.423ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-02T11:23:12.427ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-02T11:23:18.802ZE [10828:CurlWorker5] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T11:23:18.803ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-02T11:23:18.803ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:45:40.860ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:45:40.860ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:45:40.860ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:47:10.898ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:47:10.898ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:47:10.898ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:48:41.195ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:48:41.195ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:48:41.195ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:50:11.411ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:50:11.412ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:50:11.412ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:51:41.656ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:51:41.656ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:51:41.656ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:53:13.478ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:53:13.479ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:53:13.479ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:54:44.406ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:54:44.407ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:54:44.407ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:56:14.811ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:56:14.811ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:56:14.811ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:57:45.626ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:57:45.627ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:57:45.627ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:59:15.959ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:59:15.959ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T06:59:15.959ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:00:46.870ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:00:46.870ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:00:46.870ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:02:16.903ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:02:16.903ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:02:16.903ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:03:46.935ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:03:46.936ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:03:46.937ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:05:17.067ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:05:17.067ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:05:17.068ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:06:47.146ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:06:47.146ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:06:47.146ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:08:17.420ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:08:17.420ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:08:17.420ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:09:47.627ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:09:47.628ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:09:47.628ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:11:17.668ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:11:17.668ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:11:17.669ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:12:48.147ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:12:48.148ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:12:48.148ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:14:18.175ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:14:18.176ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:14:18.176ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:15:49.970ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:15:49.970ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:15:49.970ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:17:21.384ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:17:21.384ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:17:21.384ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:18:52.927ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:18:52.927ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:18:52.927ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:20:22.972ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:20:22.972ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:20:22.972ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:21:53.723ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:21:53.723ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:21:53.724ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:23:24.544ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:23:24.544ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:23:24.545ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:24:55.361ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:24:55.361ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:24:55.362ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:24:57.765ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:24:58.297ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T07:24:58.536ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:24:58.632ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:25:13.253ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:25:13.633ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:25:14.433ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:26:08.690ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:26:09.057ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T07:26:09.064ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:26:09.274ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:26:17.959ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:26:17.981ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:26:18.033ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:26:24.050ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:26:24.426ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T07:26:24.540ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:26:24.552ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:26:27.034ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:26:27.034ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:26:27.034ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:26:40.662ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:26:40.766ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:26:40.874ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:27:03.780ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:27:04.337ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T07:27:04.413ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:27:04.418ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:27:09.278ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:27:09.368ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:27:09.379ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:27:59.356ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:27:59.356ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:27:59.356ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:28:31.490ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:28:31.820ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T07:28:31.995ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:28:32.002ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:28:35.378ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:28:35.510ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:28:35.746ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:29:12.035ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:29:13.437ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T07:29:13.447ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:29:13.469ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:29:16.932ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:29:16.971ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:29:16.976ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:29:23.645ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:29:24.111ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T07:29:24.421ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:29:24.548ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:29:29.381ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:29:29.381ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:29:29.381ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:29:35.715ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:29:35.963ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:29:35.971ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:29:42.768ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:29:43.067ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T07:29:43.168ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:29:43.276ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:29:47.787ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:29:48.061ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:29:48.887ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:30:04.093ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:30:04.456ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T07:30:04.784ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:30:05.073ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:30:25.814ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T07:30:26.740ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T07:30:27.213ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T07:30:59.433ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:30:59.433ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:30:59.433ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:32:29.456ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:32:29.456ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:32:29.456ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:33:59.809ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:33:59.810ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:33:59.810ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:35:29.875ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:35:29.876ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:35:29.876ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:36:59.912ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:36:59.913ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:36:59.913ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:38:30.813ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:38:30.814ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:38:30.814ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:40:01.985ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:40:01.985ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:40:01.985ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:41:32.280ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:41:32.281ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:41:32.281ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:43:04.436ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:43:04.436ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:43:04.436ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:44:37.693ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:44:37.693ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:44:37.693ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:46:07.724ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:46:07.724ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:46:07.724ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:47:40.775ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:47:40.775ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:47:40.775ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:49:11.519ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:49:11.519ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:49:11.519ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:50:41.778ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:50:41.779ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:50:41.779ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:52:12.082ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:52:12.082ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:52:12.082ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:53:42.825ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:53:42.825ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:53:42.825ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:55:13.003ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:55:13.004ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:55:13.004ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:56:43.493ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:56:43.493ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:56:43.493ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:58:14.563ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:58:14.563ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:58:14.563ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:59:49.149ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:59:49.149ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T07:59:49.149ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:01:19.390ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:01:19.390ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:01:19.390ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:02:52.831ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:02:52.831ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:02:52.831ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:04:25.694ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:04:25.694ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:04:25.694ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:05:56.071ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:05:56.071ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:05:56.071ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:07:27.092ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:07:27.092ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:07:27.092ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:08:57.862ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:08:57.862ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:08:57.862ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:10:27.906ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:10:27.906ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:10:27.906ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:11:58.073ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:11:58.073ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:11:58.073ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:13:28.523ZE [13996:CurlWorker6] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:13:28.524ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:13:28.524ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:35:14.776ZE [12556:CurlWorker7] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:35:14.776ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:35:14.777ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T08:36:23.621ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T08:36:24.136ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T08:36:24.634ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T08:36:24.695ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T08:36:24.821ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T08:36:25.355ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T08:36:25.611ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T08:36:25.697ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T08:36:27.252ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T08:36:28.062ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-03T08:36:28.250ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-03T08:36:28.330ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state ONLINE
+2022-06-03T11:43:12.597ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T11:43:12.889ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T11:43:12.940ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state OFFLINE
+2022-06-03T11:43:21.298ZE [14560:CurlWorker8] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T11:43:21.306ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T11:43:21.307ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T13:24:29.559ZE [14564:CurlWorker9] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T13:24:29.560ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T13:24:29.560ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-03T13:24:32.467ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T13:24:35.186ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T13:24:36.015ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T13:24:36.445ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T13:24:38.613ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T13:24:39.482ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T13:24:40.402ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T13:24:40.755ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T13:24:42.046ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T13:24:42.685ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-03T13:24:42.972ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-03T13:24:43.190ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state ONLINE
+2022-06-03T16:58:42.407ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T16:58:42.718ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T16:58:42.719ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state OFFLINE
+2022-06-03T16:58:42.719ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T16:58:42.719ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T16:58:42.719ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T16:58:42.719ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T16:58:42.719ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T16:58:42.719ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-03T16:58:42.744ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-03T16:58:43.539ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-03T16:58:49.954ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-03T16:58:50.258ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-03T16:58:50.277ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-03T16:58:50.297ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state ONLINE
+2022-06-05T10:55:06.177ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-05T10:55:08.015ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-05T10:55:09.384ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-05T10:55:10.120ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state OFFLINE
+2022-06-05T10:55:10.290ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-05T10:55:11.644ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-05T10:55:11.814ZE [1628:CurlWorker11] curl_api.cc:141:StatusFromCurlCode Remapped curl code 6 to Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-05T10:55:11.814ZE [12544:MetricsTransportThread] legacy_metrics_transport.cc:199:SendRequest Request failed: Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-05T10:55:11.815ZI [12544:MetricsTransportThread] legacy_metrics_transport.cc:384:ProcessRequestsOnBackgroundThread Metrics failed to send, Status::UNAVAILABLE_WHILE_OFFLINE
+2022-06-05T10:55:13.177ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-05T10:55:13.303ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-05T10:55:13.385ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-05T10:55:13.570ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:256:CheckConnection This adapter is offline.
+2022-06-05T10:55:13.603ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-06-05T10:55:13.657ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value OFFLINE, so not notifying.
+2022-06-05T10:55:31.079ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-05T10:55:32.759ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-05T10:55:33.759ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-05T10:55:34.230ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state ONLINE
+2022-06-05T11:24:42.819ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-05T11:24:44.037ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-05T11:24:44.275ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-05T11:24:44.335ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value ONLINE, so not notifying.
+2022-06-05T11:24:44.388ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-05T11:24:44.494ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-05T11:24:44.581ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-05T11:24:44.588ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value ONLINE, so not notifying.
+2022-06-05T11:24:44.766ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-05T11:24:44.915ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-05T11:24:45.020ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-05T11:24:45.024ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value ONLINE, so not notifying.
+2022-06-05T11:24:45.097ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-05T11:24:45.363ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-05T11:24:45.366ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-05T11:24:45.391ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value ONLINE, so not notifying.
+2022-06-05T11:24:46.636ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-06-05T11:24:49.223ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-06-05T11:24:49.227ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-06-05T11:24:49.231ZI [13844:NetworkStatusListener_COM] network_status_listener_win.cc:153:UpdateState State changed to existing value ONLINE, so not notifying.

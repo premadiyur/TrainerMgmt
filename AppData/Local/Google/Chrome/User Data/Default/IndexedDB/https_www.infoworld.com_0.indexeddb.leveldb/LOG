@@ -1,0 +1,6 @@
+2021/07/13-23:49:05.194 164c Creating DB C:\Users\admin\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_www.infoworld.com_0.indexeddb.leveldb since it was missing.
+2021/07/13-23:49:05.333 164c Reusing MANIFEST C:\Users\admin\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_www.infoworld.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/13-23:53:06.309 324c Level-0 table #5: started
+2021/07/13-23:53:06.443 324c Level-0 table #5: 3180466 bytes OK
+2021/07/13-23:53:06.483 324c Delete type=0 #3
+2021/07/13-23:53:06.485 324c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,182 @@
+-------------------------------------
+drive_fs log started
+version: 54.0.3.0
+-------------------------------------
+2022-01-19T09:08:15.315ZI [11020:log_writer_thread] instrumentation.cc:111:OpenLogFileInDirectory Logging to C:\Users\admin\AppData\Local\Google\DriveFS\Logs\drive_fs.txt
+2022-01-19T09:08:15.347ZI [8996:NonCelloThread] drive_fs_main.cc:156:LogExistingCrashReports No existing crash reports found.
+2022-01-19T09:08:15.347ZI [8996:NonCelloThread] drive_fs_main.cc:362:PrintCommandLine C:\Program Files\Google\Drive File Stream\54.0.3.0\GoogleDriveFS.exe --crash_handler_token=\\.\pipe\crashpad_5036_UCIIIFNTRPSWFYDW --parent_version=54.0.3.0 --startup_mode 
+2022-01-19T09:08:15.397ZI [8996:NonCelloThread] drive_fs_main.cc:139:InitializeLanguage Initializing with detected language: en-GB
+2022-01-19T09:08:15.429ZI [8996:NonCelloThread] i18n.cc:310:InitializeI18n I18n initialized with en-gb
+2022-01-19T09:09:01.685ZI [8996:NonCelloThread] drive_fs.cc:527:RunDriveFS Options: argv_0: "C:\\Program Files\\Google\\Drive File Stream\\54.0.3.0\\GoogleDriveFS.exe"
+base_path: "C:\\Users\\admin\\AppData\\Local\\Google\\DriveFS"
+ipc_pipe_path: "\\\\.\\Pipe\\GoogleDriveFSPipe_admin"
+shell_ipc_pipe_path: "\\\\.\\Pipe\\GoogleDriveFSPipe_admin_shell"
+crash_handler_token: "\\\\.\\pipe\\crashpad_5036_UCIIIFNTRPSWFYDW"
+enable_tracing: false
+enable_ui: true
+enable_file_dances: true
+use_fake_cello_fs: false
+enable_poll_for_changes: true
+drive_create_options {
+  use_fake_cloud_store: false
+  authorize_new_user: false
+  refresh_token: ""
+  user_email: ""
+  token_uri: ""
+  auth_uri: ""
+  metadata_server_auth_uri: ""
+  user_id: ""
+}
+enable_field_event_recording: true
+open_gdoc_path: ""
+started_by_installer: false
+locale: ""
+force_onboarding: false
+log_connection_details: false
+use_intranet_connectivity_to_check_online: false
+crash_handler_init_status: SUCCESS
+cello_options {
+  drive_api_options {
+    apiary_trace_token: ""
+    apiary_trace_regex: ""
+    dapper_trace_regex: ""
+    functional_tests_dir_path: ""
+  }
+}
+open_gdocs_root: false
+open_gsheets_root: false
+open_gslides_root: false
+crash_on_core_start: false
+use_curl_logging_scribe: false
+force_case_sensitivity: false
+new_gsuite_file: ""
+account_settings_from_file_path: ""
+parent_version: "54.0.3.0"
+open_all_dialogs: false
+startup_mode: true
+fake_multiaccount_ui: false
+feature_config_override {
+  global {
+  }
+  account {
+  }
+}
+fake_migration_file_viewer_data: false
+global_feature_config {
+}
+photos_scope: ""
+show_sign_in_dialog_if_no_user: true
+show_preferences_dialog_debug_menu: false
+crash_in_execution_context: false
+enable_physical_http_logging: false
+
+2022-01-19T09:09:01.686ZI [8996:NonCelloThread] drive_fs.cc:155:LogSystemConfig OS: Windows/10.0.19042
+2022-01-19T09:09:01.686ZI [8996:NonCelloThread] drive_fs.cc:162:LogSystemConfig Architecture: x86_64
+2022-01-19T09:09:01.686ZI [8996:NonCelloThread] drive_fs.cc:170:LogSystemConfig Total RAM: 3.84 GiB
+2022-01-19T09:09:01.686ZI [8996:NonCelloThread] drive_fs.cc:186:LogSystemConfig Disk space: 48.86 GB free / 106.79 GB total
+2022-01-19T09:09:01.686ZI [8996:NonCelloThread] drive_fs.cc:193:LogSystemConfig Timezone: UTC+0000 (UTC)
+2022-01-19T09:09:01.686ZI [8996:NonCelloThread] preferences_manager.cc:103:GetUserPreferences user_preferences for no_user: {
+global {
+  content_cache_base_path: "C:\\Users\\admin\\AppData\\Local\\Google\\DriveFS"
+  trusted_root_certs_file_path: "C:\\Program Files\\Google\\Drive File Stream\\54.0.3.0\\config\\roots.pem"
+  disable_ssl_validation: false
+  disable_crl_check: false
+  direct_connection: false
+  force_browser_auth: false
+  do_not_show_dialogs {
+    mount_point_changed: false
+    confirm_shared_folder_move_in: false
+    confirm_shared_folder_move_out: false
+    confirm_td_file_move_out: false
+    confirm_move_to_untrusted_td: false
+    warning_move_to_untrusted_td: false
+    warning_td_file_move_out: false
+    warning_shared_folder_move_in: false
+    warning_shared_folder_move_out: false
+  }
+  autostart_on_login: true
+  outlook_attachment_size_threshold_mbytes: 10
+  disable_outlook_plugin: false
+  disable_meet_outlook_plugin: false
+  disable_add_account: false
+  allowed_accounts_pattern: ".*"
+  stalled_progress_seconds: 5
+  open_office_files_in_docs: true
+  enable_smb: false
+  prompt_to_backup_devices: true
+}
+account {
+  mount_point_path: "G"
+  disable_realtime_presence: false
+  machine_root_doc_id: ""
+  photos_upload_quality: ORIGINAL_QUALITY
+  photos_upload_screenshots: true
+  photos_upload_raw_files: true
+  old_mirrored_my_drive_path: ""
+  mirrored_my_drive_watch_path: ""
+}
+}
+2022-01-19T09:09:01.687ZI [8996:NonCelloThread] preferences_manager.cc:134:GetEffectivePreferences effective_preferences for no_user: {
+global {
+  content_cache_base_path: "C:\\Users\\admin\\AppData\\Local\\Google\\DriveFS"
+  trusted_root_certs_file_path: "C:\\Program Files\\Google\\Drive File Stream\\54.0.3.0\\config\\roots.pem"
+  disable_ssl_validation: false
+  disable_crl_check: false
+  direct_connection: false
+  force_browser_auth: false
+  do_not_show_dialogs {
+    mount_point_changed: false
+    confirm_shared_folder_move_in: false
+    confirm_shared_folder_move_out: false
+    confirm_td_file_move_out: false
+    confirm_move_to_untrusted_td: false
+    warning_move_to_untrusted_td: false
+    warning_td_file_move_out: false
+    warning_shared_folder_move_in: false
+    warning_shared_folder_move_out: false
+  }
+  autostart_on_login: true
+  outlook_attachment_size_threshold_mbytes: 10
+  disable_outlook_plugin: false
+  disable_meet_outlook_plugin: false
+  disable_add_account: false
+  allowed_accounts_pattern: ".*"
+  stalled_progress_seconds: 5
+  open_office_files_in_docs: true
+  enable_smb: false
+  prompt_to_backup_devices: true
+}
+account {
+  mount_point_path: "G"
+  disable_realtime_presence: false
+  machine_root_doc_id: ""
+  photos_upload_quality: ORIGINAL_QUALITY
+  photos_upload_screenshots: true
+  photos_upload_raw_files: true
+  old_mirrored_my_drive_path: ""
+  mirrored_my_drive_watch_path: ""
+}
+}
+2022-01-19T09:09:01.687ZI [8996:NonCelloThread] migration.cc:536:ShouldRun Migration is not enabled, skipping.
+2022-01-19T09:09:01.753ZI [648:ipc_thread] ipc_socket_win.cc:274:GetNextConnection Accepting next connection
+2022-01-19T09:09:01.846ZI [8996:NonCelloThread] app.cc:595:RegisterOutlookAddInHelper Google Drive Outlook Add-in: Outlook add-in already unregistered.
+2022-01-19T09:09:01.846ZI [8996:NonCelloThread] app.cc:595:RegisterOutlookAddInHelper Google Meet Outlook Add-in: Outlook add-in already unregistered.
+2022-01-19T09:09:02.133ZI [8996:NonCelloThread] app.cc:925:CleanupGoogleSyncShortcuts Google Drive Sync client is installed
+2022-01-19T09:09:31.050ZI [8996:NonCelloThread] dialog.cc:75:ResetViewViaDifferencer Resetting UpdateViewDifferencer.
+2022-01-19T09:09:31.054ZI [648:ipc_thread] ipc_socket_win.cc:274:GetNextConnection Accepting next connection
+2022-01-19T09:09:31.057ZI [8996:NonCelloThread] curl_api.cc:1221:Create SSL verification with CAcerts path: C:\Program Files\Google\Drive File Stream\54.0.3.0\config\roots.pem
+2022-01-19T09:09:31.066ZI [8996:NonCelloThread] uiext.cc:65:SaveFlagsToRegistry Set Explorer extension keys.
+2022-01-19T09:09:32.121ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-01-19T09:09:32.125ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-01-19T09:09:32.126ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-01-19T09:09:32.126ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state ONLINE
+2022-01-19T09:09:36.665ZI [8996:NonCelloThread] drive_fs.cc:379:operator() Startup tracing disabled: Status::CANCELLED
+2022-01-19T09:09:36.804ZI [13176:trace_writer_thread] instrumentation.cc:579:operator() Writing Chrome Trace to C:\Users\admin\AppData\Local\Google\DriveFS\Logs\startup_trace_2022-01-19T09_09_36.json
+2022-01-19T09:09:36.804ZI [13176:trace_writer_thread] instrumentation.cc:581:operator() Trace successfully written
+2022-01-19T10:04:34.044ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-01-19T10:04:34.281ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: offline
+2022-01-19T10:04:34.352ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state OFFLINE
+2022-01-19T10:04:35.531ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:221:CheckConnection Checking connection state.
+2022-01-19T10:04:36.700ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:250:CheckConnection This adapter is online.
+2022-01-19T10:04:37.027ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:260:CheckConnection Result: online
+2022-01-19T10:04:37.493ZI [5540:NetworkStatusListener_COM] network_status_listener_win.cc:150:UpdateState Notifying of change to state ONLINE

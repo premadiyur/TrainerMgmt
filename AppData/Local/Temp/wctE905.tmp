@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <update throttle="100" rescan="1440" currentversion="22.045.0227.0004" maxapplicable="22.999.9999.9999" minapplicable="16.000.0000.0000">
+    <binary sha1hash="1Z9h6wIKHNOplv+q6ITecaUfHX8=" sha256hash="D1u9EIDdW0l5iQ/GstrqCK2nLDnTfbuE46tUz1ADQ1I=" url="https://oneclient.sfx.ms/Win/Prod/22.045.0227.0004/OneDriveSetup.exe" />
+    <msixbinary url="https://oneclient.sfx.ms/Win/Prod/22.045.0227.0004/Microsoft.OneDriveSyncClient_8wekyb3d8bbwe.msix" />
+    <amd64binary sha1hash="sMylnaLOprWbiGlqNuVYOVxHfws=" sha256hash="OyQ1KLo85QG7288j0Wk1tG/KPkEKCKjHLyVztbiIJYs=" url="https://oneclient.sfx.ms/Win/Prod/22.045.0227.0004/amd64/OneDriveSetup.exe" />
+  </update>
+</root>

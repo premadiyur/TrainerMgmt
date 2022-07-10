@@ -1,0 +1,7 @@
+-------------------------------------
+parent log started
+version: 53.0.8.0
+-------------------------------------
+2021-12-09T04:08:38.729ZI [9120:log_writer_thread] instrumentation.cc:111:OpenLogFileInDirectory Logging to C:\Users\admin\AppData\Local\Google\DriveFS\Logs\parent.txt
+2021-12-09T04:08:38.831ZI [9536:NonCelloThread] drive_fs_main.cc:156:LogExistingCrashReports No existing crash reports found.
+2021-12-09T04:08:38.831ZI [9536:NonCelloThread] drive_fs_main.cc:361:PrintCommandLine C:\Program Files\Google\Drive File Stream\53.0.8.0\GoogleDriveFS.exe --startup_mode 
